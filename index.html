@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kushcartel Apparel</title>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/Kushcartel-Apparel.css">
+</head>
+<body>
+  <!--Header-->
+  <header class="header">
+    <nav class="nav">
+      <a href="#" class="logo">Kushcartel Apparel</a>
+      <ul class="nav-links">
+        <li><a href="#collection">Our Collection</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+      
+      <div class="nav-actions">
+        <button class="cat-btn" onclick="toggleCart()">
+          <i class="fas fa-shopping-cart"></i> Cart <span class="cart-count"> 0</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+  
+  <!--Main Section-->
+  <main class="main-section" id="home">
+    <section class="banner">
+      <div class="banner-text">
+        <h1>THE BIG DEAL</h1>
+        <p>Streetwear staples from R99.99</p>
+        <a href="#" class="shop-now">SHOP NOW</a>
+      </div>
+      <div class="banner-img"></div>
+    </section>
+    
+    <!--Collection section-->
+    <section class="collection" id="collection">
+      <h2 class="collection-header">Our Collection</h2>
+      <div class="filters">
+        <button class="filter-btn active" onclick="filterProducts('all')">All Items</button>
+        <button class="filter-btn" onclick="filterProducts('men')">Men</button>
+        <button class="filter-btn" onclick="filterProducts('women')">Women</button>
+        <button class="filter-btn" onclick="filterProducts('accessories)">Accessories</button>
+      </div>
+      <article class="collection-grid" id="collection-grid">
+        <!--Clothing Will be listed here-->
+      </article>
+    </section>
+    
+    <!--Cart model-->
+    <section class="cart-model" id="cartModel">
+      <div class="cart-content">
+        <h3 class="cart-header">
+          <i class="fas fa-shopping-bag"></i>
+          <button class="close-cart" onclick="toggleCart()"><i class="fas fa-times"></i>
+          </button>
+        </h3>
+        <div class="cart-items">
+          <div class="empty-cart">
+            <div class="empty-cart-icon">
+              <i class="fas fa-shopping-bag"></i>
+              <p>Your Cart is Empty</p>
+            </div>
+          </div>
+          <div class="cart-total" id"cartTotal">
+            <p class="total-price" id="totalPrice">
+              Total: R0.00
+              <button class="checkout-btn" onclick="showCheckout()"></button>
+            </p>
+            <div class="checkout-form" id="checkoutForm">
+              <button class="back-to-cart" onclick="hideCheckout()">
+                <i class="fas fa-arrow-left"></i>
+                Back to Cart
+              </button>
+              <form onsubmit="processOrder(event)">
+                <section class="form-section">
+                  <h4><i class="fas fa-box"></i>Shipping Information</h4>
+                  <div class="form-group">
+                    <lable for="fullName">Full Name</lable>
+                    <input type="text" id="fullName" name="fullName" required> 
+                  </div>
+                  
+                  <div class="form-group">
+                    <lable for="fullName">Email</lable>
+                    <input type="email" id="email" name="email" required>
+                  </div>
+                  
+                  <div class="form-group">
+                    <lable for="address">Address</lable>
+                    <input type="text" id="address" name="addrress" required> 
+                  </div>
+                  
+                  <div class="form-row">
+                    <div class="form-group">
+                      <lable for="city">City</lable>
+                      <input type="text" id="city" name="city" required>
+                    </div>
+                    
+                    <div class="form-group">
+                      <lable for="zipCode">Zip-Code</lable>
+                      <input type="text" id="zipCode" name="zipCode" required>
+                    </div>
+                    
+                    <div class="form-group">
+                      <label for="country">Country</label>
+                      <select name="country" id="country" required>
+                        <option value="">Select Option</option>
+                        <option value="Lim">Limpopo</option>
+                        <option value="Mpu">Mapumalanga</option>
+                        <option value="Gau">Gauteng</option>
+                        <option value="NW">North-West</option>
+                        <option value="NC">Northern Cape</option>
+                        <option value="WC">Western Cape</option>
+                        <option value="EC">Eastern Cape</option>
+                        <option value="KZN">KwaZulu-Natal</option>
+                      </select>
+                    </div>
+                  </div>
+                  
+                  <section class="form-section">
+                    <h4>Payment Information</h4>
+                    <div class="payment-methods">
+                      <div class="payment-method active" onclick="selectPayment('credit')">Credit Card</div>
+                      <div class="payment-method" onclick="selectPayment('paypal')">PayPal</div>
+                      <div clas="payment-method" onclick="selectPayment('apple')">Apple Pay</div>
+                    </div>
+                    <div id="creditCardForm">
+                      <div class="form-group">
+                        <lable for="cardNumber">Card Number</lable>
+                        <input type="text" id="cardNumber" name="cardNumber" placeholder="1234 5678 9012 3456" required>
+                      </div>
+                      <div class="form-row">
+                        <div class="form-group">
+                          <lable for="expiryDate">Expiry Date</lable>
+                          <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY" required>
+                        </div>
+                        <div class="form-group">
+                          <label for="cvv">CVV</label>
+                          <input type="text" id="cvv" name="cvv" placeholder="123" required>
+                        </div>
+                        <div class="form-group">
+                          <label for="cardName">Name on Card</label>
+                          <input type="text" id="cardName" name="cardName" required> 
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="total-price" id="checkoutTotal">Total: 0.00</div>
+                    <button type="submit" class="place-order-btn">Place Order
+                    </button>
+                  </section>
+                </section>
+              </form>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!--About Us-->
+    <section class="about-section" id="about">
+      <h2 class="about-header">About Us</h2>
+    </section>
+    
+    <!--FAQ-->
+    <section class="faq-section">
+      <h3 class="faq-header">FAQ</h3>
+    </section>
+    
+    <!--Contact Us-->
+    <section class="contact-us" id="contact">
+      <h2 class="contact-header">
+        Contact Us
+      </h2>
+    </section>
+    
+    <!--Footer-->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Return & Service</a>
+          <a href="#">Shipping Info</a>
+          <a href="#">Customer Support</a>
+        </div>
+        <p class=footer-text>&copy; 2026 Beaufort Digital Production. All rights reserved</p>
+      </div>
+    </footer>
+  </main>
+  
+  <script src="/Kushcartel-Appereal.js"></script>
+</body>
+</html>

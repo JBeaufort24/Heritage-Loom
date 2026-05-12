@@ -1,0 +1,195 @@
+:root {
+    --main-color: rgba(255, 20, 20, 1);
+    --main-color-alt: rgba(255, 80, 80, 1);
+    --second-color: rgba(225, 0, 0, 1);
+    --second-color-alt: rgba(225, 50, 50, 1);
+    --black: rgba(10, 10, 10, 1);
+    --white: whitesmoke;
+    --button-color: rgba(255, 200, 200, 1);
+    --text: rgba(75, 75, 75, 1);
+    
+    --main-text: 1.1em;
+    --sub-text: 0.6em;
+    --h1-text: 2.3em;
+    --h2-text: 1.9em;
+    --h3-text: 1.2em;
+    
+    --heavy-font: 700;
+    --mild-font: 500;
+    --light-font: 300;
+    
+    --main-font: 'Inter', sans-serif;
+    --sub-font: 'Archivo Black', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Body, Headers, Links*/
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: var(--sub-font);
+    line-height: 1.6;
+    color: var(--black);
+    background-color: var(--white);
+}
+
+/*Header*/
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--white);
+    background-filter: blur(20px);
+    z-index: 10;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/*Navigation Bar*/
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: var(--h1-text);
+    font-weight: var(--heavy-font);
+    letter-spacing: -0.02em;
+    color: var(--main-color);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2.5em;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--black);
+    font-weight: var(--light-font);
+    font-size: var(--sub-text);
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+.nav-links a::after {
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--second-color-alt);
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.cart-btn {
+    position: relative;
+    background: var(--white);
+    border: 2px solid var(--text);
+    padding: 0.8em 1.2em;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: var(--sub-text);
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.cart-btn:hover {
+    background: var(--white);
+    border-color: var(--second-color-alt);
+    transform: trasnlateY(-1px);
+    box-shadow: 0 4px 12px var(--black);
+}
+
+.cart-count {
+    background: var(--main-color-alt);
+    color: var(--white);
+    border-radius: 50%;
+    min-width: 20px;
+    height: 20px;
+    font-size: var(--sub-text);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: var(--mild-font);
+}
+
+/* --- Banner SECTION --- */
+.banner {
+    background: var(--main-color-alt);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    min-height: 450px;
+    color: var(--white);
+    overflow: hidden;
+}
+
+.banner-text {
+    padding: 10%;
+}
+
+.banner-text h1 {
+    font-family: var(--main-font);
+    font-size: clamp(2.5em, 6vw, 5em);
+    line-height: 0.9;
+    margin-bottom: 20px;
+}
+
+.banner-text p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.banner-img {
+    height: 100%;
+    background: url("/Kush Images/Kush 17.jpg") center/cover;
+}
+
+.shop-now {
+    position: absolute;
+    background: var(--white);
+    color: #000;
+    padding: .8em 2em;
+    border: none;
+    border-radius: 8px;
+    font-size: var(--main-text);
+    font-weight: var(--mild-font);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.shop-now:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px var(--second-color-alt);
+}
+
+/*COllection Section*/
