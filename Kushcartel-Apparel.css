@@ -193,3 +193,226 @@ body {
 }
 
 /*COllection Section*/
+.collecction{
+    padding: 5em 2em;
+    max-width: 1400px;
+    margin: 0 auto;
+    background: #fafafa;
+}
+
+.collection-header{
+    text-align: center;
+    margin-bottom: 2em;
+    color: var(--main-color-alt);
+    font-size: var(--h2-text);
+    font-weight: var(--heavy-font);
+    letter-spacing: -0.02em;
+}
+
+.filters{
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin-bottom: 2em;
+    flex-wrap: wrap;
+}
+
+.filter-btn{
+    background: var(--white);
+    border: 2px solid #e0e0e0;
+    padding: 0.8em 2em;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: var(--mild-font);
+    font-size: var(--sub-text);
+}
+
+.filter-btn.active, .filter-btn:hover{
+    background: var(--black);
+    color: var(--white);
+    border-color: #000;
+    transform: translateY(-1px);
+}
+
+.collection-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minimax(320px, 1fr));
+    gap: 2.5em;
+}
+
+.product-card{
+    background: var(--white);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0.4px 20px rgba(0, 0, 0, 0.8);
+    transition: all 0.4s ease;
+    cursor: pointer;
+    border: 1px solid #f0f0f0;
+}
+
+.product-card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+.product-image{
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+.product-info{
+    padding: 2em;
+}
+
+.product-title{
+    font-size: var(--main-text);
+    font-weight: var(--heavy-font);
+    margin-bottom: 0.5em;
+    color: var(--black);
+}
+
+.product-category{
+    color: var(--text);
+    font-size: var(--sub-text);
+    margin-bottom: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: var(--mild-font);
+}
+
+.product-price{
+    font-size: var(--main-text);
+    font-weight: var(--heavy-font);
+    color: var(--black);
+    margin-bottom: 1.5em;
+}
+
+.add-to-cart{
+    width: 100%;
+    background: var(--black);
+    color: var(--white);
+    border: none;
+    padding: 1em;
+    border-radius: 8px;
+    font-weight: var(--mild-font);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: var(--main-text);
+}
+
+.add-to-cart:hover{
+    background: var(--text);
+    transform: translateY(-1px);
+}
+
+/*Cart Modal*/
+.cart-model{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 20;
+    display: none;
+    backdrop-filter: blur(10px);
+}
+
+.cart-content{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 450px;
+    background: var(--white);
+    padding: 2em;
+    overflow-y: auto;
+    transform: translateX(100%);
+    transition: transform 0.4s ease;
+}
+
+.cart-model.active .cart-content{
+    transform: translateX(0);
+}
+
+.cart-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2px solid var(--white);
+    border-bottom: 2px solid var(--white);
+    padding-bottom: 1em;
+    font-size: var(--h3-text);
+    font-weight: var(--heavy-font);
+    color: var(--black);
+}
+
+.close-cart{
+    background: var(--white);
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: var(--main-text);
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.close-cart:hover{
+    background: var(--white);
+}
+
+.cart-item{
+    display: flex;
+    gap: 1em;
+    margin-bottom: 1.5em;
+    padding-bottom: 1.5em;
+    border-bottom: 1px solid var(--white);
+}
+
+.cart-item-image{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.cart-item-info{
+    flex: 1;
+}
+
+.cart-item-title{
+    font-weight: var(--mild-font);
+    margin-bottom: 0.5em;
+    color: var(--black);
+}
+
+.cart-item-price{
+    color: var(--black);
+    font-weight: var(--heavy-font);
+    font-size: var(--main-text);
+}
+
+.quantity-controls{
+    display: flex;
+    align-items: center;
+    gap: 0.8em;
+    margin-top: 0.8em;
+}
+
+.quantity-btn{
+    background: var(--white);
+    border: 1px solid #e9ecef;
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: var(--mild-font);
+    transition: all 0.3s ease;
+}
+
