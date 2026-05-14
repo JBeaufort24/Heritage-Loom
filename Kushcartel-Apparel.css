@@ -416,3 +416,56 @@ body {
     transition: all 0.3s ease;
 }
 
+.quantity-btn:hover{
+    background: var(--white);
+}
+
+.quantity{
+    font-weight: var(--mild-font);
+    min-width: 20px;
+    text-align: center;
+}
+
+.cart-total{
+    margin-top: 2em;
+    padding-top: 2em;
+    border-top: 2px solid var(--white);
+}
+
+.total-price{
+    font-size: var(--main-text);
+    font-weight: var(--heavy-font);
+    margin-bottom: 1.5em;
+    color: var(--black);
+}
+
+.checkout-btn{
+    width: 100%;
+    background: var(--second-color-alt);
+    color: var(--white);
+    border: none;
+    padding: 1.2em;
+    border-radius: 8px;
+    font-size: var(--main-text);
+    font-weight: var(--mild-font);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.checkout-btn:hover{
+    background: var(--second-color);
+    transform: translateY(-1px);
+}
+
+.empty-cart{
+    text-align: center;
+    padding: 3em 1em;
+    color: var(--second-color-alt);
+}
+
+.empty-cart-icon{
+    font-size: 3em;
+    margin-bottom: 1em;
+}
+
+/*Checkout Form*/
