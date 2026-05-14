@@ -106,7 +106,7 @@ body {
 .cart-btn {
     position: relative;
     background: var(--white);
-    border: 2px solid var(--text);
+    border: none;
     padding: 0.8em 1.2em;
     border-radius: 12px;
     cursor: pointer;
@@ -121,7 +121,7 @@ body {
     background: var(--white);
     border-color: var(--second-color-alt);
     transform: trasnlateY(-1px);
-    box-shadow: 0 4px 12px var(--black);
+    box-shadow: 0 1px 1px var(--text);
 }
 
 .cart-count {
