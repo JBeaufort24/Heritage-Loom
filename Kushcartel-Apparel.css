@@ -609,3 +609,34 @@ body {
     color: var(--white);
 }
 
+/*Responsive Design Media*/
+@media (max-width: 768px){
+    .nav{
+        padding: 1em;
+    }
+    
+    .nav-links{
+        display: none;
+    }
+    
+    .collection h1{
+        font-size: 2.5em;
+    }
+    
+    .cart-content{
+        width: 100%;
+    }
+    
+    .product-grid{
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.5em;
+    }
+    
+    .form-row{
+        grid-template-columns: 1fr;
+    }
+    
+    .section-title h2{
+        font-size: 2.2em;
+    }
+}
