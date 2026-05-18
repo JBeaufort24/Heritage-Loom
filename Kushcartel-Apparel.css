@@ -201,79 +201,79 @@
         }
 
         .section-title h2 {
-            font-size: 3rem;
-            font-weight: 800;
-            margin-bottom: 1rem;
+            font-size: var(--h2-text);
+            font-weight: var(--heavy-font);
+            margin-bottom: 1em;
             letter-spacing: -0.02em;
-            color: #000;
+            color: var(--black);
         }
 
         .section-title p {
-            font-size: 1.2rem;
-            color: #666;
-            font-weight: 300;
+            font-size: var(--main-text);
+            color: var(--grey-light);
+            font-weight: var(--light-font);
         }
 
         .filters {
             display: flex;
             justify-content: center;
-            gap: 1rem;
-            margin-bottom: 4rem;
+            gap: 1em;
+            margin-bottom: 2rem;
             flex-wrap: wrap;
         }
 
         .filter-btn {
-            background: white;
-            border: 2px solid #e0e0e0;
-            padding: 0.8rem 2rem;
+            background: var(--white);
+            border: 2px solid var(--white);
+            padding: 0.8em 2em;
             border-radius: 8px;
             cursor: pointer;
             transition: all 0.3s ease;
-            font-weight: 600;
-            font-size: 0.95rem;
+            font-weight: var(--mild-font);
+            font-size: var(--main-text);
         }
 
         .filter-btn.active,
         .filter-btn:hover {
-            background: #000;
-            color: white;
-            border-color: #000;
+            background: var(--white);
+            color: var(--black);
+            border-color: var(--second-color);
             transform: translateY(-1px);
         }
 
         .product-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 2.5rem;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5em;
         }
 
         .product-card {
-            background: white;
+            background: --white;
             border-radius: 16px;
             overflow: hidden;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            box-shadow: 0 4px 20px var(--black);
             transition: all 0.4s ease;
             cursor: pointer;
-            border: 1px solid #f0f0f0;
+            border: 1px solid var(--grey-light);
         }
 
         .product-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px var(--grey-light);
         }
 
         .product-image {
             width: 100%;
-            height: 280px;
+            height: 200px;
             object-fit: cover;
         }
 
         .product-info {
-            padding: 2rem;
+            padding: 2em 1em;
         }
 
         .product-title {
-            font-size: 1.3rem;
+            font-size: main;
             font-weight: 700;
             margin-bottom: 0.5rem;
             color: #000;

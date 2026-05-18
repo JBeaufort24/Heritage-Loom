@@ -17,8 +17,7 @@
                 <li><a href="#contact">Contact Us</a></li>
             </ul>
             <div class="nav-actions">
-                <button class="cart-btn" onclick="toggleCart()">
-                    🛒 Cart
+                <button class="cart-btn" onclick="toggleCart()">Cart
                     <span class="cart-count" id="cartCount">0</span>
                 </button>
             </div>
@@ -57,21 +56,21 @@
     <div class="cart-modal" id="cartModal">
         <div class="cart-content">
             <div class="cart-header">
-                <h3>️ Shopping Cart</h3>
+                <h3>️Shopping Cart</h3>
                 <button class="close-cart" onclick="toggleCart()">✕</button>
             </div>
             
             <!-- Cart Items -->
             <div id="cartItems">
                 <div class="empty-cart">
-                    <div class="empty-cart-icon">🛒</div>
+                    <div class="empty-cart-icon"></div>
                     <p>Your cart is empty</p>
                 </div>
             </div>
             
             <!-- Cart Total -->
             <div class="cart-total" id="cartTotal" style="display: none;">
-                <div class="total-price" id="totalPrice">Total: $0.00</div>
+                <div class="total-price" id="totalPrice">Total: R0.00</div>
                 <button class="checkout-btn" onclick="showCheckout()">Proceed to Checkout</button>
             </div>
 
@@ -81,7 +80,7 @@
                 
                 <form onsubmit="processOrder(event)">
                     <div class="form-section">
-                        <h4>📦 Shipping Information</h4>
+                        <h4>Shipping Information</h4>
                         <div class="form-group">
                             <label for="fullName">Full Name</label>
                             <input type="text" id="fullName" name="fullName" required>
@@ -127,11 +126,11 @@
                     </div>
 
                     <div class="form-section">
-                        <h4>💳 Payment Information</h4>
+                        <h4>Payment Information</h4>
                         <div class="payment-methods">
-                            <div class="payment-method active" onclick="selectPayment('credit')">💳 Credit Card</div>
-                            <div class="payment-method" onclick="selectPayment('paypal')">🟦 PayPal</div>
-                            <div class="payment-method" onclick="selectPayment('apple')">📱 Apple Pay</div>
+                            <div class="payment-method active" onclick="selectPayment('credit')">Credit Card</div>
+                            <div class="payment-method" onclick="selectPayment('paypal')">PayPal</div>
+                            <div class="payment-method" onclick="selectPayment('apple')">Apple Pay</div>
                         </div>
                         <div id="creditCardForm">
                             <div class="form-group">
@@ -156,7 +155,7 @@
                     </div>
 
                     <div class="total-price" id="checkoutTotal">Total: $0.00</div>
-                    <button type="submit" class="place-order-btn">🚀 Place Order</button>
+                    <button type="submit" class="place-order-btn">Place Order</button>
                 </form>
             </div>
         </div>
@@ -172,7 +171,7 @@
                 <a href="#shipping">Shipping Info</a>
                 <a href="#support">Customer Support</a>
             </div>
-            <p>&copy; 2025 LUXE Premium Fashion. All rights reserved.</p>
+            <p>&copy; 2026 Beaufort Digital Productions</p>
         </div>
     </footer>
 
