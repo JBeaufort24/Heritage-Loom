@@ -200,7 +200,7 @@
             margin-bottom: 1em;
         }
 
-        .section-title h2 {
+        h2.section-title {
             font-size: var(--h2-text);
             font-weight: var(--heavy-font);
             margin-bottom: 1em;
