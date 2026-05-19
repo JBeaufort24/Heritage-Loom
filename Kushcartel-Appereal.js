@@ -281,13 +281,6 @@
                 image: "/Kush Images/Kush 40.jpg"
             },
             {
-                id: 40,
-                title: "Elegant Silk Dress",
-                category: "women",
-                price: 189.99,
-                image: "/Kush Images/Kush 40.jpg"
-            },
-            {
                 id: 41,
                 title: "Elegant Silk Dress",
                 category: "women",
