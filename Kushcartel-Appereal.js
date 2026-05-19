@@ -363,10 +363,10 @@
             const button = event.target;
             const originalText = button.textContent;
             button.textContent = '✓ Added!';
-            button.style.background = '#34C759';
+            button.style.background = 'rgba(255, 80, 80, 1';
             setTimeout(() => {
                 button.textContent = originalText;
-                button.style.background = '#000';
+                button.style.background = 'rgba (10, 10, 10, 1';
             }, 1000);
         }
 
@@ -401,7 +401,7 @@
             if (cart.length === 0) {
                 cartItems.innerHTML = `
                     <div class="empty-cart">
-                        <div class="empty-cart-icon">🛒</div>
+                        <div class="empty-cart-icon"></div>
                         <p>Your cart is empty</p>
                     </div>
                 `;
@@ -501,11 +501,11 @@
             
             // Simulate order processing
             const placeOrderBtn = document.querySelector('.place-order-btn');
-            placeOrderBtn.textContent = '🔄 Processing...';
+            placeOrderBtn.textContent = 'Processing...';
             placeOrderBtn.disabled = true;
             
             setTimeout(() => {
-                alert(`🎉 Order placed successfully!\n\nOrder Details:\n- Items: ${cart.length}\n- Total: ${orderData.total.toFixed(2)}\n- Delivery to: ${orderData.customer.name}\n\nThank you for shopping with LUXE!`);
+                alert(`Order placed successfully!\n\nOrder Details:\n- Items: ${cart.length}\n- Total: ${orderData.total.toFixed(2)}\n- Delivery to: ${orderData.customer.name}\n\nThank you for shopping with Kushcartel Apparel!`);
                 
                 // Reset everything
                 cart = [];
@@ -514,7 +514,7 @@
                 toggleCart();
                 event.target.reset();
                 
-                placeOrderBtn.textContent = '🚀 Place Order';
+                placeOrderBtn.textContent = 'Place Order';
                 placeOrderBtn.disabled = false;
             }, 2000);
         }
