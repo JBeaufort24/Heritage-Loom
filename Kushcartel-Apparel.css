@@ -254,6 +254,7 @@
             transition: all 0.4s ease;
             cursor: pointer;
             border: 1px solid var(--grey-light);
+            max-width: 250px;
         }
 
         .product-card:hover {
@@ -585,6 +586,45 @@
 
         .back-to-cart:hover {
             background: var(--grey-dark);
+        }
+        
+        /*Grid Section of About and Contact Section*/
+        .grid-section{
+            
+        }
+        
+        /*About Section*/
+        .about-grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 1.5em;
+        }
+        
+        .about-card{
+            max-width: 250px;
+            background: rgba(225, 50, 50, .1);
+            margin: 10px;
+            border-radius: 16px;
+        }
+        
+        .card-title, .card-text{
+            text-align: center;
+        }
+        
+        .card-title{
+            position: relative;
+        }
+        
+        .card-text{
+            padding-top: 1em;
+        }
+        
+        .about-img{
+            display: reletives;
+            width: 100%;
+            height: 25vh;
+            object-fit: cover;
+            object-position: center;
         }
 
         /* Footer */
