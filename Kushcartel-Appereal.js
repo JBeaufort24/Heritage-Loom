@@ -2,311 +2,276 @@
         const products = [
             {
                 id: 1,
-                title: "Premium Cotton T-Shirt",
+                title: "Kush T-Shirt",
                 category: "men",
-                price: 59.99,
+                price: 0,
                 image: "/Kush Images/Kush 1.jpg"
             },
             {
                 id: 2,
-                title: "Elegant Silk Dress",
+                title: "Kush Sweater",
                 category: "women",
-                price: 189.99,
+                price: 0,
                 image: "/Kush Images/Kush 2.jpg"
             },
             {
                 id: 3,
-                title: "Elegant Silk Dress",
-                category: "women",
-                price: 189.99,
-                image: "/Kush Images/Kush 3.jpg"
+                title: "Kush Pants",
+                category: "men",
+                price: 600,
+                image: "/Kush Images/Kush 47.jpg"
             },
             {
                 id: 4,
-                title: "Elegant Silk Dress",
+                title: "Grey Kush T-Shirt",
                 category: "women",
-                price: 189.99,
+                price: 0,
                 image: "/Kush Images/Kush 4.jpg"
             },
             {
                 id: 5,
-                title: "Elegant Silk Dress",
-                category: "women",
-                price: 189.99,
+                title: "Kush Hoodie",
+                category: "men",
+                price: 700,
                 image: "/Kush Images/Kush 5.jpg"
             },
             {
                 id: 6,
-                title: "Elegant Silk Dress",
-                category: "women",
-                price: 189.99,
-                image: "/Kush Images/Kush 6.jpg"
+                title: "Kush Logo T-Shirt",
+                category: "men",
+                price: 0,
+                image: "/Kush Images/Kush 45.jpg"
             },
             {
                 id: 7,
-                title: "Elegant Silk Dress",
-                category: "women",
-                price: 189.99,
+                title: "Blue Kush Jacket",
+                category: "men",
+                price: 0,
                 image: "/Kush Images/Kush 7.jpg"
             },
             {
                 id: 8,
-                title: "Elegant Silk Dress",
+                title: "Kush Hoodie",
                 category: "women",
-                price: 189.99,
+                price: 520,
                 image: "/Kush Images/Kush 8.jpg"
             },
             {
                 id: 9,
-                title: "Elegant Silk Dress",
-                category: "women",
-                price: 189.99,
+                title: "Kush Hoodie",
+                category: "men",
+                price: 0,
                 image: "/Kush Images/Kush 9.jpg"
             },
             {
                 id: 10,
-                title: "Elegant Silk Dress",
-                category: "women",
-                price: 189.99,
+                title: "Army Kush T-Shirt",
+                category: "men",
+                price: 0,
                 image: "/Kush Images/Kush 10.jpg"
             },
             {
                 id: 11,
-                title: "Elegant Silk Dress",
-                category: "women",
-                price: 189.99,
+                title: "Blue Kush T-Shirt",
+                category: "men",
+                price: 0,
                 image: "/Kush Images/Kush 11.jpg"
             },
             {
                 id: 12,
-                title: "Elegant Silk Dress",
-                category: "women",
-                price: 189.99,
+                title: "Kush T-Shirts",
+                category: "accessories",
+                price: 0,
                 image: "/Kush Images/Kush 12.jpg"
             },
             {
                 id: 13,
-                title: "Elegant Silk Dress",
+                title: "Kush Logo T-Shirt",
                 category: "women",
-                price: 189.99,
-                image: "/Kush Images/Kush 13.jpg"
+                price: 0,
+                image: "/Kush Images/Kush 45.jpg"
             },
             {
                 id: 14,
-                title: "Elegant Silk Dress",
-                category: "women",
-                price: 189.99,
+                title: "Blue Kush T-Shirt",
+                category: "men",
+                price: 0,
                 image: "/Kush Images/Kush 14.jpg"
             },
             {
                 id: 15,
-                title: "Elegant Silk Dress",
-                category: "women",
-                price: 189.99,
+                title: "Blue Kush Jacket",
+                category: "men",
+                price: 0,
                 image: "/Kush Images/Kush 15.jpg"
             },
             {
                 id: 16,
-                title: "Elegant Silk Dress",
+                title: "Kush Logo T-Shirt",
                 category: "women",
-                price: 189.99,
-                image: "/Kush Images/Kush 16.jpg"
+                price: 0,
+                image: "/Kush Images/Kush 44.jpg"
             },
             {
                 id: 17,
-                title: "Elegant Silk Dress",
-                category: "women",
-                price: 189.99,
-                image: "/Kush Images/Kush 17.jpg"
+                title: "Kush Pants",
+                category: "men",
+                price: 600,
+                image: "/Kush Images/Kush 43.jpg"
             },
             {
                 id: 18,
-                title: "Elegant Silk Dress",
+                title: "Kush Tracksuit",
                 category: "women",
-                price: 189.99,
+                price: 700,
                 image: "/Kush Images/Kush 18.jpg"
             },
             {
                 id: 19,
-                title: "Elegant Silk Dress",
-                category: "women",
-                price: 189.99,
+                title: "Kush Tracksuit",
+                category: "men",
+                price: 700,
                 image: "/Kush Images/Kush 19.jpg"
             },
             {
                 id: 20,
-                title: "Elegant Silk Dress",
-                category: "women",
-                price: 189.99,
+                title: "Kush Hat",
+                category: "accessories",
+                price: 0,
                 image: "/Kush Images/Kush 20.jpg"
             },
             {
                 id: 21,
-                title: "Elegant Silk Dress",
-                category: "women",
-                price: 189.99,
+                title: "Kush Tracksuit",
+                category: "men",
+                price: 700,
                 image: "/Kush Images/Kush 21.jpg"
             },
             {
                 id: 22,
-                title: "Elegant Silk Dress",
+                title: "Kush Tracksuit",
                 category: "women",
-                price: 189.99,
+                price: 700,
                 image: "/Kush Images/Kush 22.jpg"
             },
             {
                 id: 23,
-                title: "Elegant Silk Dress",
-                category: "women",
-                price: 189.99,
+                title: "Kush Styled T-Shirt",
+                category: "men",
+                price: 0,
                 image: "/Kush Images/Kush 23.jpg"
             },
             {
                 id: 24,
-                title: "Elegant Silk Dress",
+                title: "Blue Kush T-Shirt",
                 category: "women",
-                price: 189.99,
-                image: "/Kush Images/Kush 24.jpg"
+                price: 0,
+                image: "/Kush Images/Kush 42.jpg"
             },
             {
                 id: 25,
-                title: "Elegant Silk Dress",
-                category: "women",
-                price: 189.99,
-                image: "/Kush Images/Kush 25.jpg"
+                title: "Kush Hoodie",
+                category: "men",
+                price: 0,
+                image: "/Kush Images/Kush 41.jpg"
             },
             {
                 id: 26,
-                title: "Premium Cotton T-Shirt",
-                category: "men",
-                price: 59.99,
+                title: "Yellow Kush T-Shirt",
+                category: "women",
+                price: 0,
                 image: "/Kush Images/Kush 26.jpg"
             },
             {
                 id: 27,
-                title: "Elegant Silk Dress",
-                category: "women",
-                price: 189.99,
+                title: "Kush White T-Shirt",
+                category: "men",
+                price: 400,
                 image: "/Kush Images/Kush 27.jpg"
             },
             {
                 id: 28,
-                title: "Elegant Silk Dress",
-                category: "women",
-                price: 189.99,
+                title: "Kush Grey T-Shirt",
+                category: "men",
+                price: 400,
                 image: "/Kush Images/Kush 28.jpg"
             },
             {
                 id: 29,
-                title: "Elegant Silk Dress",
+                title: "Kush T-Shirts",
                 category: "women",
-                price: 189.99,
+                price: 400,
                 image: "/Kush Images/Kush 29.jpg"
             },
             {
                 id: 30,
-                title: "Elegant Silk Dress",
+                title: "Kush Logo T-Shirt",
                 category: "women",
-                price: 189.99,
+                price: 0,
                 image: "/Kush Images/Kush 30.jpg"
             },
             {
                 id: 31,
-                title: "Elegant Silk Dress",
-                category: "women",
-                price: 189.99,
-                image: "/Kush Images/Kush 31.jpg"
+                title: "Kush Yellow T-Shirt",
+                category: "men",
+                price: 0,
+                image: "/Kush Images/Kush 40.jpg"
             },
             {
                 id: 32,
-                title: "Elegant Silk Dress",
+                title: "Special Kush Logo T-Shirt",
                 category: "women",
-                price: 189.99,
+                price: 0,
                 image: "/Kush Images/Kush 32.jpg"
             },
             {
                 id: 33,
-                title: "Elegant Silk Dress",
-                category: "women",
-                price: 189.99,
+                title: "Grey Kush T-Shirt",
+                category: "men",
+                price: 0,
                 image: "/Kush Images/Kush 33.jpg"
             },
             {
                 id: 34,
-                title: "Elegant Silk Dress",
+                title: "Kush Logo T-Shirt",
                 category: "women",
-                price: 189.99,
+                price: 0,
                 image: "/Kush Images/Kush 34.jpg"
             },
             {
                 id: 35,
-                title: "Elegant Silk Dress",
-                category: "women",
-                price: 189.99,
+                title: "Kush Red T-Shirt",
+                category: "men",
+                price: 0,
                 image: "/Kush Images/Kush 35.jpg"
             },
             {
                 id: 36,
-                title: "Elegant Silk Dress",
-                category: "women",
-                price: 189.99,
+                title: "Kush Pants",
+                category: "men",
+                price: 600,
                 image: "/Kush Images/Kush 36.jpg"
             },
             {
                 id: 37,
-                title: "Elegant Silk Dress",
-                category: "women",
-                price: 189.99,
+                title: "Kush Pants",
+                category: "men",
+                price: 700,
                 image: "/Kush Images/Kush 37.jpg"
             },
             {
                 id: 38,
-                title: "Elegant Silk Dress",
+                title: "Kush Hoodie",
                 category: "women",
-                price: 189.99,
+                price: 700,
                 image: "/Kush Images/Kush 38.jpg"
             },
             {
                 id: 39,
-                title: "Elegant Silk Dress",
-                category: "women",
-                price: 189.99,
+                title: "Kush Tracksuit",
+                category: "men",
+                price: 700,
                 image: "/Kush Images/Kush 39.jpg"
-            },
-            {
-                id: 40,
-                title: "Elegant Silk Dress",
-                category: "women",
-                price: 189.99,
-                image: "/Kush Images/Kush 40.jpg"
-            },
-            {
-                id: 41,
-                title: "Elegant Silk Dress",
-                category: "women",
-                price: 189.99,
-                image: "/Kush Images/Kush 41.jpg"
-            },
-            {
-                id: 42,
-                title: "Elegant Silk Dress",
-                category: "women",
-                price: 189.99,
-                image: "/Kush Images/Kush 42.jpg"
-            },
-            {
-                id: 43,
-                title: "Elegant Silk Dress",
-                category: "women",
-                price: 189.99,
-                image: "/Kush Images/Kush 43.jpg"
-            },
-            {
-                id: 44,
-                title: "Elegant Silk Dress",
-                category: "women",
-                price: 189.99,
-                image: "/Kush Images/Kush 44.jpg"
             },
         ];
 
