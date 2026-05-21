@@ -707,7 +707,30 @@
         .footer-links a:hover {
             color: var(--white);
         }
-
+        
+        /*Main INformation Site*/
+        .main-information{
+            text-align: center;
+        }
+        
+        .main-header{
+            color: var(--main-color);
+            font-family: var(--main-font);
+            font-weight: var(--heavy-font);
+            padding-bottom: 20px;
+        }
+        
+        .information-card{
+            text-align: left;
+            padding: 0 10px 10px 20px;
+        }
+        
+        .information-text{
+            background-color: lightgray;
+            padding: 10px;
+            border-radius: 8px;
+        }
+    
         /* Responsive */
         @media only screen and (max-width: 480px) {
             .logo{
@@ -769,5 +792,10 @@
             .about-card{
                 width: 95%;
                 margin: 0 10px;
+            }
+            
+            .main-information{
+                display: grid;
+                grid-template-columns: 1fr;
             }
     }
