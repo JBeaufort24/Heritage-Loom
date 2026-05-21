@@ -596,12 +596,12 @@
         /*About Section*/
         .about-grid{
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
             gap: 1.5em;
         }
         
         .about-card{
-            max-width: 250px;
+            width: 300px;
             background: rgba(225, 50, 50, .1);
             margin: 10px;
             border-radius: 16px;
@@ -660,7 +660,7 @@
         }
 
         /* Responsive */
-        @media only screen and (max-width: 768px) {
+        @media only screen and (max-width: 480px) {
             .logo{
                 font-size: 1em;
             }
@@ -708,4 +708,17 @@
             .section-title h2 {
                 font-size: var(--h2-text);
             }
-        }
+            
+            .about-grid{
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: .5em;
+                align-items: center;
+                align-content: center;
+            }
+        
+            .about-card{
+                width: 95%;
+                margin: 0 10px;
+            }
+    }
