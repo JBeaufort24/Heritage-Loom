@@ -113,16 +113,14 @@
                             <label for="country">Country</label>
                             <select id="country" name="country" required>
                                 <option value="">Select Country</option>
-                                <option value="US">United States</option>
-                                <option value="CA">Canada</option>
-                                <option value="UK">United Kingdom</option>
-                                <option value="AU">Australia</option>
-                                <option value="DE">Germany</option>
-                                <option value="FR">France</option>
-                                <option value="IT">Italy</option>
-                                <option value="ES">Spain</option>
-                                <option value="NL">Netherlands</option>
-                                <option value="JP">Japan</option>
+                                <option value="lim">Limpopo</option>
+                                <option value="mp">Mphumalanga</option>
+                                <option value="gt">Gauteng</option>
+                                <option value="nw">North-West</option>
+                                <option value="kzn">KwaZulu-Natal</option>
+                                <option value="ec">Eastern Cape</option>
+                                <option value="nc">Northern Cape</option>
+                                <option value="wc">Western Cape</option>
                             </select>
                         </div>
                     </div>
@@ -198,8 +196,38 @@
                 <ul class="contact-form">
                     <li class="contact-icon">Whatsapp</li>
                     <li class="contact-icon">Facebook</li>
-                    <li class="contact-icon">Twiter</li>
+                    <li class="contact-icon">Twitter</li>
+                    <li class="contact-icon">LinkenIn</li>
                 </ul>
+                
+                <div class="container">
+                    <form action="action_page.php">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                        
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                        
+                        <label for="country">Country</label>
+                        <select id="country" name="country">
+                            <option value="#">Select Country</option>
+                            <option value="lim">Limpopo</option>
+                            <option value="mpl">Mpumalanga</option>
+                            <option value="nw">North-West</option>
+                            <option value="ga">Gauteng</option>
+                            <option value="kzn">KwaZulu-Natal</option>
+                            <option value="nc">Northern Cape</option>
+                            <option value="wc">Western Cape</option>
+                            <option value="ec">Eastern Cape</option>
+                        </select>
+                        
+                        <label for="subject">Subject</label>
+                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
+                        
+                        <input type="submit" value="Submit">
+                        
+                    </form>
+                </div>
             </section>
         
     </section>
