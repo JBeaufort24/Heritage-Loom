@@ -590,19 +590,20 @@
         }
         
         /*Grid Section of About and Contact Section*/
-        .grid-section{
-            
+        .section-grid{
+           display: grid;
+           grid-template-columns: 50% 50%;
         }
         
         /*About Section*/
         .about-grid{
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            gap: 1.5em;
+            grid-template-columns: 50% 50%;
+            gap: .5em;
         }
         
         .about-card{
-            width: 300px;
+            width: 225px;
             background: var(--second-color-trans);
             margin: 10px;
             border-radius: 16px;
@@ -732,7 +733,7 @@
         }
     
         /* Responsive */
-        @media only screen and (max-width: 480px) {
+        @media only screen and (max-width: 620px) {
             .logo{
                 font-size: 1em;
             }
@@ -797,5 +798,10 @@
             .main-information{
                 display: grid;
                 grid-template-columns: 1fr;
+            }
+            
+            .section-grid {
+                display: grid;
+                grid-template-columns: 100%;
             }
     }
