@@ -740,7 +740,7 @@
         }
     
         /* Responsive */
-        @media only screen and (max-width: 620px) {
+        @media only screen and (max-width: 520px) {
             .logo{
                 font-size: 1em;
             }
