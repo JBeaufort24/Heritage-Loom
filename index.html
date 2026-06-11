@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kushcartel Apparel</title>
+    <title>Heritage Loom | Local Luxury</title>
     <link rel="stylesheet"  href="/HeritageLoom.css">
 </head>
 <body>
     <!-- Header -->
-    <header class="header">
+<header class="header">
         <nav class="nav">
-            <div class="logo">Kushcartel Apparel</div>
+            <div class="logo">Heritage Loom</div>
             <ul class="nav-links">
                 <li><a href="#products">Collection</a></li>
                 <li><a href="#about">About Us</a></li>
@@ -25,226 +25,226 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-text">
-            <h1>THE BIG DEAL</h1>
-            <p>Streetwear staples from R99.99</p>
-            <a href="#products" class="btn-white">SHOP NOW</a>
-        </div>
-        <div class="hero-img"></div>
-    </section>
+<section class="hero">
+    <div class="hero-text">
+        <h1>THE BIG DEAL</h1>
+        <p>Streetwear staples from R99.99</p>
+        <a href="#products" class="btn-white">SHOP NOW</a>
+    </div>
+    <div class="hero-img"></div>
+</section>
 
     <!-- Products Section -->
-    <section class="products" id="products">
-        <h2 class="section-title">Our Collection</h2>
+<section class="products" id="products">
+    <h2 class="section-title">Our Collection</h2>
 
-        <div class="filters">
-            <button class="filter-btn active" onclick="filterProducts('all')">All Items</button>
-            <button class="filter-btn" onclick="filterProducts('tshirt')">T-Shirt</button>
-            <button class="filter-btn" onclick="filterProducts('hoodie')">Hoodies</button>
-            <button class="filter-btn" onclick="filterProducts('jacket')">Jackets</button>
-            <button class="filter-btn" onclick="filterProducts('pants')">Pants</button>
-            <button class="filter-btn" onclick="filterProducts('tracksuit')">Tracksuits</button>
-            <button class="filter-btn" onclick="filterProducts('sweater')">Sweaters</button>
-            <button class="filter-btn" onclick="filterProducts('hats')">Hats</button>
-        </div>
+    <div class="filters">
+        <button class="filter-btn active" onclick="filterProducts('all')">All Items</button>
+        <button class="filter-btn" onclick="filterProducts('tshirt')">T-Shirt</button>
+        <button class="filter-btn" onclick="filterProducts('hoodie')">Hoodies</button>
+        <button class="filter-btn" onclick="filterProducts('jacket')">Jackets</button>
+        <button class="filter-btn" onclick="filterProducts('pants')">Pants</button>
+        <button class="filter-btn" onclick="filterProducts('tracksuit')">Tracksuits</button>
+        <button class="filter-btn" onclick="filterProducts('sweater')">Sweaters</button>
+        <button class="filter-btn" onclick="filterProducts('hats')">Hats</button>
+    </div>
 
-        <div class="product-grid" id="productGrid">
-            <!-- Products will be loaded by JavaScript -->
-        </div>
-    </section>
+    <div class="product-grid" id="productGrid">
+        <!-- Products will be loaded by JavaScript -->
+    </div>
+</section>
 
     <!-- Cart Modal -->
-    <div class="cart-modal" id="cartModal">
-        <div class="cart-content">
-            <div class="cart-header">
-                <h3>️Shopping Cart</h3>
-                <button class="close-cart" onclick="toggleCart()">✕</button>
+<div class="cart-modal" id="cartModal">
+    <div class="cart-content">
+        <div class="cart-header">
+            <h3>️Shopping Cart</h3>
+            <button class="close-cart" onclick="toggleCart()">✕</button>
+        </div>
+        
+        <!-- Cart Items -->
+        <div id="cartItems">
+            <div class="empty-cart">
+                <div class="empty-cart-icon"></div>
+                <p>Your cart is empty</p>
             </div>
-            
-            <!-- Cart Items -->
-            <div id="cartItems">
-                <div class="empty-cart">
-                    <div class="empty-cart-icon"></div>
-                    <p>Your cart is empty</p>
-                </div>
-            </div>
-            
-            <!-- Cart Total -->
-            <div class="cart-total" id="cartTotal" style="display: none;">
-                <div class="total-price" id="totalPrice">Total: R0.00</div>
-                <button class="checkout-btn" onclick="showCheckout()">Proceed to Checkout</button>
-            </div>
+        </div>
+        
+        <!-- Cart Total -->
+        <div class="cart-total" id="cartTotal" style="display: none;">
+            <div class="total-price" id="totalPrice">Total: R0.00</div>
+            <button class="checkout-btn" onclick="showCheckout()">Proceed to Checkout</button>
+        </div>
 
-            <!-- Checkout Form -->
-            <div class="checkout-form" id="checkoutForm">
-                <button class="back-to-cart" onclick="hideCheckout()">← Back to Cart</button>
-                
-                <form onsubmit="processOrder(event)">
-                    <div class="form-section">
-                        <h4>Shipping Information</h4>
+        <!-- Checkout Form -->
+        <div class="checkout-form" id="checkoutForm">
+            <button class="back-to-cart" onclick="hideCheckout()">← Back to Cart</button>
+            
+            <form onsubmit="processOrder(event)">
+                <div class="form-section">
+                    <h4>Shipping Information</h4>
+                    <div class="form-group">
+                        <label for="fullName">Full Name</label>
+                        <input type="text" id="fullName" name="fullName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Street Address</label>
+                        <input type="text" id="address" name="address" required>
+                    </div>
+                    <div class="form-row">
                         <div class="form-group">
-                            <label for="fullName">Full Name</label>
-                            <input type="text" id="fullName" name="fullName" required>
+                            <label for="city">City</label>
+                            <input type="text" id="city" name="city" required>
                         </div>
                         <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
+                            <label for="zipCode">ZIP Code</label>
+                            <input type="text" id="zipCode" name="zipCode" required>
                         </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="country">Country</label>
+                        <select id="country" name="country" required>
+                            <option value="">Select Country</option>
+                            <option value="lim">Limpopo</option>
+                            <option value="mp">Mphumalanga</option>
+                            <option value="gt">Gauteng</option>
+                            <option value="nw">North-West</option>
+                            <option value="kzn">KwaZulu-Natal</option>
+                            <option value="ec">Eastern Cape</option>
+                            <option value="nc">Northern Cape</option>
+                            <option value="wc">Western Cape</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h4>Payment Information</h4>
+                    <div class="payment-methods">
+                        <div class="payment-method active" onclick="selectPayment('credit')">Credit Card</div>
+                        <div class="payment-method" onclick="selectPayment('paypal')">PayPal</div>
+                        <div class="payment-method" onclick="selectPayment('apple')">Apple Pay</div>
+                    </div>
+                    <div id="creditCardForm">
                         <div class="form-group">
-                            <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone" name="phone" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="address">Street Address</label>
-                            <input type="text" id="address" name="address" required>
+                            <label for="cardNumber">Card Number</label>
+                            <input type="text" id="cardNumber" name="cardNumber" placeholder="1234 5678 9012 3456" required>
                         </div>
                         <div class="form-row">
                             <div class="form-group">
-                                <label for="city">City</label>
-                                <input type="text" id="city" name="city" required>
+                                <label for="expiryDate">Expiry Date</label>
+                                <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY" required>
                             </div>
                             <div class="form-group">
-                                <label for="zipCode">ZIP Code</label>
-                                <input type="text" id="zipCode" name="zipCode" required>
+                                <label for="cvv">CVV</label>
+                                <input type="text" id="cvv" name="cvv" placeholder="123" required>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="country">Country</label>
-                            <select id="country" name="country" required>
-                                <option value="">Select Country</option>
-                                <option value="lim">Limpopo</option>
-                                <option value="mp">Mphumalanga</option>
-                                <option value="gt">Gauteng</option>
-                                <option value="nw">North-West</option>
-                                <option value="kzn">KwaZulu-Natal</option>
-                                <option value="ec">Eastern Cape</option>
-                                <option value="nc">Northern Cape</option>
-                                <option value="wc">Western Cape</option>
-                            </select>
+                            <label for="cardName">Name on Card</label>
+                            <input type="text" id="cardName" name="cardName" required>
                         </div>
                     </div>
+                </div>
 
-                    <div class="form-section">
-                        <h4>Payment Information</h4>
-                        <div class="payment-methods">
-                            <div class="payment-method active" onclick="selectPayment('credit')">Credit Card</div>
-                            <div class="payment-method" onclick="selectPayment('paypal')">PayPal</div>
-                            <div class="payment-method" onclick="selectPayment('apple')">Apple Pay</div>
-                        </div>
-                        <div id="creditCardForm">
-                            <div class="form-group">
-                                <label for="cardNumber">Card Number</label>
-                                <input type="text" id="cardNumber" name="cardNumber" placeholder="1234 5678 9012 3456" required>
-                            </div>
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="expiryDate">Expiry Date</label>
-                                    <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="cvv">CVV</label>
-                                    <input type="text" id="cvv" name="cvv" placeholder="123" required>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="cardName">Name on Card</label>
-                                <input type="text" id="cardName" name="cardName" required>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="total-price" id="checkoutTotal">Total: $0.00</div>
-                    <button type="submit" class="place-order-btn">Place Order</button>
-                </form>
-            </div>
+                <div class="total-price" id="checkoutTotal">Total: $0.00</div>
+                <button type="submit" class="place-order-btn">Place Order</button>
+            </form>
         </div>
     </div>
+</div>
     
-    <section class="section-grid">
-        <!--About Section-->
-            <section class="about" id="about">
-                <h2 class="section-title">About Us</h2>
-                <article class="about-grid">
-                    <div class="about-card">
-                        <img src="/Kush Images/Kush 25.jpg" alt="Local Source" class="about-img">
-                        <h2 class="card-title">Local Source</h2>
-                        <p class="card-text">All our products are <span class="logo-red">locally sourced</span>.</p>
-                    </div>
-                    <div class="about-card">
-                        <img src="/Kush Images/Kush 17.jpg" alt="" class="about-img">
-                        <h2 class="card-title">Clothing Sizes</h2>
-                        <p class="card-text">We have multiple options when it comes to sizing: <span class="logo-red">XS, S, M, L, XL, XXL</span></p>
-                    </div>
-                    <div class="about-card">
-                        <img src="/Kush Images/Kush 29.jpg" alt="" class="about-img">
-                        <h2 class="card-title">Clothing Colour's</h2>
-                        <p class="card-text">We have multiple options whne it comes to colours: Black, White, Yellow, Blue and more. All with our trademark <span class="logo-red">Kush Logo</span> on it.</p>
-                    </div>
-                    <div class="about-card">
-                        <img src="/Kush Images/Kush 31.jpg" alt="" class="about-img">
-                        <h2 class="card-title">Limited Edition</h2>
-                        <p class="card-text">We have for special occasions a <span class="logo-red">Limited Edition</span> clothing items.</p>
-                    </div>
-                </article>
-            </section>
-            
-            <!--Contact Section-->
-            <section class="contact" id="contact">
-                <h2 class="section-title">Contact Us</h2>
-                <ul class="contact-form">
-                    <li class="contact-icon">Whatsapp</li>
-                    <li class="contact-icon">Facebook</li>
-                    <li class="contact-icon">Twitter</li>
-                    <li class="contact-icon">LinkenIn</li>
-                </ul>
-                
-                <div class="container">
-                    <form action="action_page.php">
-                        <label for="fname">First Name</label>
-                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
-                        
-                        <label for="lname">Last Name</label>
-                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                        
-                        <label for="country">Country</label>
-                        <select id="country" name="country">
-                            <option value="#">Select Country</option>
-                            <option value="lim">Limpopo</option>
-                            <option value="mpl">Mpumalanga</option>
-                            <option value="nw">North-West</option>
-                            <option value="ga">Gauteng</option>
-                            <option value="kzn">KwaZulu-Natal</option>
-                            <option value="nc">Northern Cape</option>
-                            <option value="wc">Western Cape</option>
-                            <option value="ec">Eastern Cape</option>
-                        </select>
-                        
-                        <label for="subject">Subject</label>
-                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
-                        
-                        <input type="submit" value="Submit">
-                        
-                    </form>
+<section class="section-grid">
+    <!--About Section-->
+        <section class="about" id="about">
+            <h2 class="section-title">About Us</h2>
+            <article class="about-grid">
+                <div class="about-card">
+                    <img src="/Kush Images/Kush 25.jpg" alt="Local Source" class="about-img">
+                    <h2 class="card-title">Local Source</h2>
+                    <p class="card-text">All our products are <span class="logo-red">locally sourced</span>.</p>
                 </div>
-            </section>
+                <div class="about-card">
+                    <img src="/Kush Images/Kush 17.jpg" alt="" class="about-img">
+                    <h2 class="card-title">Clothing Sizes</h2>
+                    <p class="card-text">We have multiple options when it comes to sizing: <span class="logo-red">XS, S, M, L, XL, XXL</span></p>
+                </div>
+                <div class="about-card">
+                    <img src="/Kush Images/Kush 29.jpg" alt="" class="about-img">
+                    <h2 class="card-title">Clothing Colour's</h2>
+                    <p class="card-text">We have multiple options whne it comes to colours: Black, White, Yellow, Blue and more. All with our trademark <span class="logo-red">Kush Logo</span> on it.</p>
+                </div>
+                <div class="about-card">
+                    <img src="/Kush Images/Kush 31.jpg" alt="" class="about-img">
+                    <h2 class="card-title">Limited Edition</h2>
+                    <p class="card-text">We have for special occasions a <span class="logo-red">Limited Edition</span> clothing items.</p>
+                </div>
+            </article>
+        </section>
         
-    </section>
+        <!--Contact Section-->
+        <section class="contact" id="contact">
+            <h2 class="section-title">Contact Us</h2>
+            <ul class="contact-form">
+                <li class="contact-icon">Whatsapp</li>
+                <li class="contact-icon">Facebook</li>
+                <li class="contact-icon">Twitter</li>
+                <li class="contact-icon">LinkenIn</li>
+            </ul>
+            
+            <div class="container">
+                <form action="action_page.php">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    
+                    <label for="country">Country</label>
+                    <select id="country" name="country">
+                        <option value="#">Select Country</option>
+                        <option value="lim">Limpopo</option>
+                        <option value="mpl">Mpumalanga</option>
+                        <option value="nw">North-West</option>
+                        <option value="ga">Gauteng</option>
+                        <option value="kzn">KwaZulu-Natal</option>
+                        <option value="nc">Northern Cape</option>
+                        <option value="wc">Western Cape</option>
+                        <option value="ec">Eastern Cape</option>
+                    </select>
+                    
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
+                    
+                    <input type="submit" value="Submit">
+                    
+                </form>
+            </div>
+        </section>
+    
+</section>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-links">
-                <a href="/footer-info.html" target="_blank">Privacy Policy</a>
-                <a href="/footer-info.html" target="_blank">Terms of Service</a>
-                <a href="/footer-info.html" target="_blank">Returns & Exchanges</a>
-                <a href="/footer-info.html" target="_blank">Shipping Info</a>
-                <a href="/footer-info.html" target="_blank">Customer Support</a>
-            </div>
-            <p>&copy; 2026 Beaufort Digital Productions</p>
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-links">
+            <a href="/footer-info.html" target="_blank">Privacy Policy</a>
+            <a href="/footer-info.html" target="_blank">Terms of Service</a>
+            <a href="/footer-info.html" target="_blank">Returns & Exchanges</a>
+            <a href="/footer-info.html" target="_blank">Shipping Info</a>
+            <a href="/footer-info.html" target="_blank">Customer Support</a>
         </div>
-    </footer>
+        <p>&copy; 2026 Beaufort Digital Productions</p>
+    </div>
+</footer>
 
-    <script src="/HeritageLoom.js" defer></script>
+<script src="/HeritageLoom.js" defer></script>
 </body>
 </html>
