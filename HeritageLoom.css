@@ -741,7 +741,7 @@ input[type=submit]:hover {
 /* Responsive */
 @media only screen and (max-width: 720px) {
     .logo{
-        font-size: 3em;
+        font-size: 2.5em;
     }
     
     .nav {
@@ -753,7 +753,7 @@ input[type=submit]:hover {
     }
 
     .hero h1 {
-        font-size: 2.5rem;
+        font-size: 2.5em;
     }
     
     .hero {
