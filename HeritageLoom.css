@@ -12,9 +12,9 @@
     
     --main-text: 1.1em;
     --sub-text: 0.6em;
-    --h1-text: 2.3em;
-    --h2-text: 1.9em;
-    --h3-text: 1.2em;
+    --h1-text: 2em;
+    --h2-text: 1.8em;
+    --h3-text: 1.3em;
     
     --heavy-font: 700;
     --mild-font: 500;
@@ -589,18 +589,18 @@ h2.section-title {
 /*Grid Section of About and Contact Section*/
 .section-grid{
    display: grid;
-   grid-template-columns: 50% 50%;
+   grid-template-columns: 1fr 1fr;
 }
 
 /*About Section*/
 .about-grid{
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr 1fr;
     gap: .5em;
 }
 
 .about-card{
-    width: 225px;
+    width: 150px;
     background: var(--second-color-trans);
     margin: 10px;
     border-radius: 16px;
@@ -612,10 +612,13 @@ h2.section-title {
 
 .card-title{
     position: relative;
+    padding-top: 0;
 }
 
 .card-text{
-    padding-top: 1em;
+    padding-top: .2em;
+    line-height: 15px;
+    padding-bottom: 5px;
 }
 
 .about-img{
@@ -631,7 +634,7 @@ h2.section-title {
     display: flex; /* Aligns items next to each other */
     justify-content: center; /* Centers the list in the container */
     list-style-type: none; /* Removes default bullet points */
-    padding: 0; /* Removes default indentation */
+    padding: 30px 0; /* Removes default indentation */
     gap: 20px; /* Adds space between the list items */
 }
 
@@ -738,7 +741,7 @@ input[type=submit]:hover {
 /* Responsive */
 @media only screen and (max-width: 720px) {
     .logo{
-        font-size: 1em;
+        font-size: 3em;
     }
     
     .nav {
@@ -796,6 +799,20 @@ input[type=submit]:hover {
     .about-card{
         width: 95%;
         margin: 0 10px;
+    }
+    
+    .card-title {
+        position: relative;
+        padding-top: 20px;
+    }
+    
+    .card-text {
+        padding-top: 10px 0;
+        line-height: 30px;
+    }
+    
+    .contact-form{
+        padding: 0; /* Removes default indentation */
     }
     
     .main-information{
