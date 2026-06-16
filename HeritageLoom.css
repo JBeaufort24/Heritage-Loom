@@ -39,19 +39,20 @@ body {
 
 /* Header */
 .header {
-    position: fixed;
+    position: relative;
     top: 0;
     width: 100%;
     background: var(--white);
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(10px);/* Blurs the content underneath */
     z-index: 10;
+    height: 15px;
 }
 
 .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5em 1em;
+    padding: 0.5em;
     margin: 0 auto;
 }
 
@@ -241,7 +242,7 @@ h2.section-title {
 
 .product-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
     gap: 1.5em;
 }
 
@@ -595,12 +596,11 @@ h2.section-title {
 /*About Section*/
 .about-grid{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: .5em;
 }
 
 .about-card{
-    width: 150px;
     background: var(--second-color-trans);
     margin: 10px;
     border-radius: 16px;
@@ -740,6 +740,10 @@ input[type=submit]:hover {
 
 /* Responsive */
 @media only screen and (max-width: 720px) {
+    .header{
+        height: 5vh;
+    }
+    
     .logo{
         font-size: 2em;
     }
