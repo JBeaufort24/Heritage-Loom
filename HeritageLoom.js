@@ -2,276 +2,171 @@
         const products = [
             {
                 id: 1,
-                title: "Kush T-Shirt",
-                category: "tshirt",
-                price: 0,
-                image: "/Kush Images/Kush 1.jpg"
+                title: "Loom White Tracksuit",
+                category: "tracksuit",
+                price: 450,
+                image: "/HeritageLoomImg/Loom 1.jpg"
             },
             {
                 id: 2,
-                title: "Kush Sweater",
-                category: "sweater",
-                price: 0,
-                image: "/Kush Images/Kush 2.jpg"
+                title: "Loom Black Hoodie",
+                category: "hoodie",
+                price: 350,
+                image: "/HeritageLoomImg/Loom 2.jpg"
             },
             {
                 id: 3,
-                title: "Kush Pants",
-                category: "pants",
+                title: "Loom Tracksuit",
+                category: "tracksuit",
                 price: 600,
-                image: "/Kush Images/Kush 47.jpg"
+                image: "/HeritageLoomImg/Loom 3.jpg"
             },
             {
                 id: 4,
-                title: "Grey Kush T-Shirt",
-                category: "tshirt",
-                price: 0,
-                image: "/Kush Images/Kush 4.jpg"
+                title: "Loom Grey Sweater",
+                category: "sweater",
+                price: 400,
+                image: "/HeritageLoomImg/Loom 4.jpg"
             },
             {
                 id: 5,
-                title: "Kush Hoodie",
-                category: "hoodie",
-                price: 700,
-                image: "/Kush Images/Kush 5.jpg"
+                title: "Loom Tracksuit",
+                category: "tracksuit",
+                price: 600,
+                image: "/HeritageLoomImg/Loom 5.jpg"
             },
             {
                 id: 6,
-                title: "Kush Logo T-Shirt",
-                category: "tshirt",
-                price: 0,
-                image: "/Kush Images/Kush 45.jpg"
+                title: "Loom Active Sweater",
+                category: "sweater",
+                price: 500,
+                image: "/HeritageLoomImg/Loom 6.jpg"
             },
             {
                 id: 7,
-                title: "Blue Kush Jacket",
-                category: "jacket",
-                price: 0,
-                image: "/Kush Images/Kush 7.jpg"
+                title: "Loom Blue Jeans",
+                category: "pants",
+                price: 450,
+                image: "/HeritageLoomImg/Loom 7.jpg"
             },
             {
                 id: 8,
-                title: "Kush Hoodie",
+                title: "Loom Comfort Hoodie",
                 category: "hoodie",
-                price: 520,
-                image: "/Kush Images/Kush 8.jpg"
+                price: 500,
+                image: "/HeritageLoomImg/Loom 8.jpg"
             },
             {
                 id: 9,
-                title: "Kush Hoodie",
-                category: "hoodie",
-                price: 0,
-                image: "/Kush Images/Kush 9.jpg"
+                title: "Loom Black Jeans",
+                category: "pants",
+                price: 400,
+                image: "/HeritageLoomImg/Loom 9.jpg"
             },
             {
                 id: 10,
-                title: "Army Kush T-Shirt",
-                category: "tshirt",
-                price: 0,
-                image: "/Kush Images/Kush 10.jpg"
+                title: "Loom Stripped Shorts",
+                category: "shorts",
+                price: 250,
+                image: "/HeritageLoomImg/Loom 10.jpg"
             },
             {
                 id: 11,
-                title: "Blue Kush T-Shirt",
-                category: "tshirt",
-                price: 0,
-                image: "/Kush Images/Kush 11.jpg"
+                title: "Loom Flour Shorts",
+                category: "shorts",
+                price: 250,
+                image: "/HeritageLoomImg/Loom 11.jpg"
             },
             {
                 id: 12,
-                title: "Kush T-Shirts",
-                category: "tshirt",
-                price: 0,
-                image: "/Kush Images/Kush 12.jpg"
+                title: "Loom Pink Shorts",
+                category: "shorts",
+                price: 200,
+                image: "/HeritageLoomImg/Loom 12.jpg"
             },
             {
                 id: 13,
-                title: "Kush Logo T-Shirt",
+                title: "Loom T-Shirt",
                 category: "tshirt",
-                price: 0,
-                image: "/Kush Images/Kush 45.jpg"
+                price: 300,
+                image: "/HeritageLoomImg/Loom 13.jpg"
             },
             {
                 id: 14,
-                title: "Blue Kush T-Shirt",
+                title: "Loom T-Shirt",
                 category: "tshirt",
-                price: 0,
-                image: "/Kush Images/Kush 14.jpg"
+                price: 300,
+                image: "/HeritageLoomImg/Loom 14.jpg"
             },
             {
                 id: 15,
-                title: "Blue Kush Jacket",
-                category: "jacket",
-                price: 0,
-                image: "/Kush Images/Kush 15.jpg"
+                title: "Loom T-Shirt",
+                category: "tshirt",
+                price: 300,
+                image: "/HeritageLoomImg/Loom 15.jpg"
             },
             {
                 id: 16,
-                title: "Kush Logo T-Shirt",
+                title: "Loom OrangeRed T-Shirt",
                 category: "tshirt",
-                price: 0,
-                image: "/Kush Images/Kush 44.jpg"
+                price: 300,
+                image: "/HeritageLoomImg/Loom 17.jpg"
             },
             {
                 id: 17,
-                title: "Kush Pants",
-                category: "pants",
-                price: 600,
-                image: "/Kush Images/Kush 43.jpg"
+                title: "Loom T-Shirt",
+                category: "tshirt",
+                price: 300,
+                image: "/HeritageLoomImg/Loom 18.jpg"
             },
             {
                 id: 18,
-                title: "Kush Tracksuit",
-                category: "tracksuit",
-                price: 700,
-                image: "/Kush Images/Kush 18.jpg"
+                title: "Loom T-Shirt",
+                category: "tshirt",
+                price: 400,
+                image: "/HeritageLoomImg/Loom 19.jpg"
             },
             {
                 id: 19,
-                title: "Kush Tracksuit",
-                category: "tracksuit",
-                price: 700,
-                image: "/Kush Images/Kush 19.jpg"
+                title: "Loom Sprots T-Shirt",
+                category: "tshirt",
+                price: 400,
+                image: "/HeritageLoomImg/Loom 20.jpg"
             },
             {
                 id: 20,
-                title: "Kush Hat",
-                category: "hats",
-                price: 0,
-                image: "/Kush Images/Kush 20.jpg"
-            },
-            {
-                id: 21,
-                title: "Kush Tracksuit",
-                category: "tracksuit",
-                price: 700,
-                image: "/Kush Images/Kush 21.jpg"
+                title: "Loom Brown Jacket",
+                category: "jacket",
+                price: 500,
+                image: "/HeritageLoomImg/Loom 23.jpg"
             },
             {
                 id: 22,
-                title: "Kush Tracksuit",
-                category: "tracksuit",
-                price: 700,
-                image: "/Kush Images/Kush 22.jpg"
+                title: "Loom Sweater",
+                category: "sweater",
+                price: 600,
+                image: "/HeritageLoomImg/Loom 25.jpg"
             },
             {
                 id: 23,
-                title: "Kush Styled T-Shirt",
-                category: "thsirt",
-                price: 0,
-                image: "/Kush Images/Kush 23.jpg"
+                title: "Loom Vibe Sweater",
+                category: "sweater",
+                price: 500,
+                image: "/HeritageLoomImg/Loom 28.jpg"
             },
             {
                 id: 24,
-                title: "Blue Kush T-Shirt",
-                category: "tshirt",
-                price: 0,
-                image: "/Kush Images/Kush 42.jpg"
-            },
-            {
-                id: 25,
-                title: "Kush Hoodie",
-                category: "hoodie",
-                price: 0,
-                image: "/Kush Images/Kush 41.jpg"
+                title: "Loom Pullover",
+                category: "sweater",
+                price: 300,
+                image: "/HeritageLoomImg/Loom 29.jpg"
             },
             {
                 id: 26,
-                title: "Yellow Kush T-Shirt",
-                category: "tshirt",
-                price: 0,
-                image: "/Kush Images/Kush 26.jpg"
-            },
-            {
-                id: 27,
-                title: "Kush White T-Shirt",
-                category: "tshirt",
-                price: 400,
-                image: "/Kush Images/Kush 27.jpg"
-            },
-            {
-                id: 28,
-                title: "Kush Grey T-Shirt",
-                category: "tshirt",
-                price: 400,
-                image: "/Kush Images/Kush 28.jpg"
-            },
-            {
-                id: 29,
-                title: "Kush T-Shirts",
-                category: "tshirt",
-                price: 400,
-                image: "/Kush Images/Kush 29.jpg"
-            },
-            {
-                id: 30,
-                title: "Kush Logo T-Shirt",
-                category: "tshirt",
-                price: 0,
-                image: "/Kush Images/Kush 30.jpg"
-            },
-            {
-                id: 31,
-                title: "Kush Yellow T-Shirt",
-                category: "tshirt",
-                price: 0,
-                image: "/Kush Images/Kush 40.jpg"
-            },
-            {
-                id: 32,
-                title: "Special Kush Logo T-Shirt",
-                category: "tshirt",
-                price: 0,
-                image: "/Kush Images/Kush 32.jpg"
-            },
-            {
-                id: 33,
-                title: "Grey Kush T-Shirt",
-                category: "tshirt",
-                price: 0,
-                image: "/Kush Images/Kush 33.jpg"
-            },
-            {
-                id: 34,
-                title: "Kush Logo T-Shirt",
-                category: "tshirt",
-                price: 0,
-                image: "/Kush Images/Kush 34.jpg"
-            },
-            {
-                id: 35,
-                title: "Kush Red T-Shirt",
-                category: "tshirt",
-                price: 0,
-                image: "/Kush Images/Kush 35.jpg"
-            },
-            {
-                id: 36,
-                title: "Kush Pants",
-                category: "pants",
-                price: 600,
-                image: "/Kush Images/Kush 36.jpg"
-            },
-            {
-                id: 37,
-                title: "Kush Pants",
-                category: "pants",
-                price: 700,
-                image: "/Kush Images/Kush 37.jpg"
-            },
-            {
-                id: 38,
-                title: "Kush Hoodie",
-                category: "hoodie",
-                price: 700,
-                image: "/Kush Images/Kush 38.jpg"
-            },
-            {
-                id: 39,
-                title: "Kush Tracksuit",
+                title: "Loom Black Leather Tracksuit",
                 category: "tracksuit",
-                price: 700,
-                image: "/Kush Images/Kush 39.jpg"
+                price: 900,
+                image: "/HeritageLoomImg/Loom 32.jpg"
             },
         ];
 
